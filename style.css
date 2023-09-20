@@ -30,7 +30,6 @@ body {
 .titulo {
     color: var(--color-titulo);
     font-size: 1.5rem;
-    margin-top: 2rem;
 }
 
 .formulario {
@@ -114,12 +113,37 @@ input[type="date"] {
 .promo3,
 .promo4 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: .8rem;
+    margin-bottom: ;
+    align-items: center;
+
+}
+
+.h3{
+    color: var(--color-bgc-input);
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .promocionesLabel {
     color: white;
     width: 40%;
+}
+
+.cont-div{
+    margin-bottom: 4rem;
+}
+
+::placeholder{
+    color: white;
+    text-align: center;
+}
+
+#inputPromocion1, #inputPromocion2, #inputPromocion3, #inputPromocion4{
+    cursor: auto;
 }
 
 /* Additional styles for loader and modals */
