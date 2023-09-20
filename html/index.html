@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Prestamos</title>
+</head>
+
+<body>
+
+    <header></header>
+    <main>
+        <div class="div-padre">
+            <div class="titulo">
+                <h1 class="titulo">Simulá tu Préstamo</h1>
+            </div>
+            <!-- Formulario -->
+            <div class="formulario">
+
+                <div class="div-datos-name">
+
+                    <div class="div-nombre">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="" required>
+                    </div>
+
+                    <div class="div-apellido">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="" required>
+                    </div>
+
+                </div>
+
+                <div class="div-fecha-correo">
+
+                    <div class="div-fecha">
+                        <label for="fecha">Fecha de Nacimiento</label>
+                        <input type="date" name="fecha" id="fecha" required>
+                    </div>
+
+                    <div class="div-correo">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" placeholder="" required>
+                    </div>
+
+                </div>
+
+                <div class="dinero">
+                    <div class="div-sueldo">
+                        <label for="sueldo">Sueldo Aproximado</label>
+                        <input type="number" id="sueldo" placeholder="" required>
+                    </div>
+
+                    <div class="div-montoPorMes">
+                        <label for="monto">Monto</Label>
+                        <input type="number" id="monto" placeholder="" required>
+                    </div>
+                </div>
+                <button type="submit" id="btn-siguiente">
+                    <h2 class="titulo-h2">SIGUIENTE</h2>
+                </button>
+            </div>
+            <div id="loader" class="loader">
+                <div class="mensajePrestamo">
+                    <h3 class="calcularPrestamo">Calculando su prestamo...</h3>
+                </div>
+            </div>
+
+
+            <div id="modal" class="modal">
+                <div class="cont-modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Por favor, complete todos los campos obligatorios.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="modal-mail" class="modal-mail">
+                <div class="cont-modal-mail">
+
+                    <div class="modal-content-mail">
+                        <span class="close-mail">&times;</span>
+                        <p>Ingrese un mail válido.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

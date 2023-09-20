@@ -1,0 +1,229 @@
+:root {
+    --color-titulo: #a8a6a8bb;
+    --color-bgc-input: #babababb;
+    --color-bgc: #370545;
+}
+
+body {
+    background-color: #23002f;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.div-padre {
+    background-color: #370545;
+    width: 24rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 5px #8c28934d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: var(--color-titulo);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.formulario {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for name and date fields */
+.div-datos-name,
+.div-fecha-correo,
+.dinero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.div-dinero {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields */
+label {
+    color: var(--color-bgc-input);
+}
+
+input {
+    background-color: var(--color-bgc-input);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0.2rem 0;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    padding: 0.4rem;
+    box-shadow: 1px 1px 7px #8414a9;
+    transition: 0.2s;
+}
+
+input[type="date"] {
+    font-family: monospace;
+    cursor: pointer;
+}
+
+/* Button */
+#btn-siguiente {
+    margin-top: 2rem;
+    padding: 0.1rem 1.3rem;
+    border-radius: 1rem;
+    background-color: var(--color-titulo);
+    color: var(--color-bgc);
+    cursor: pointer;
+}
+
+#btn-siguiente:focus {
+    padding: 0.6rem 1.4rem;
+    transition: 0.2s;
+    color: #15021ba7;
+    background-color: #e5e5e5bb;
+}
+
+/* Promotions section */
+.promociones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.promo1,
+.promo2,
+.promo3,
+.promo4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promocionesLabel {
+    color: white;
+    width: 40%;
+}
+
+/* Additional styles for loader and modals */
+
+/* Loader */
+.loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c0721e1;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+    border-radius: 2rem;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+.mensajePrestamo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.calcularPrestamo {
+    color: #bababadf;
+    font-size: 1.5rem;
+}
+
+/* Modals */
+.modal,
+.modal-mail {
+    border-radius: 1rem;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #1c0721e1;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.cont-modal,
+.cont-modal-mail {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content,
+.modal-content-mail {
+    border-radius: 1rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.close,
+.close-mail {
+    border-radius: 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"] {
+    width: fit-content;
+}
+
+.div-fecha {
+    width: 100%;
+}
+
+#fecha {
+    padding: .43rem 2.3rem;
+}
